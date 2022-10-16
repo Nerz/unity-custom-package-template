@@ -1,0 +1,28 @@
+{
+  "name": "com.[company-name].[package-name]",
+  "version": "0.0.1",
+  "displayName": "[package-display-name]",
+  "description": "[package-description]",
+  "unity": "2021.3",
+  "unityRelease": "11f1",
+  "documentationUrl": "https://github.com/[github-username]/unity-custom-package-template/",
+  "changelogUrl": "https://github.com/[github-username]/unity-custom-package-template/blob/master/CHANGELOG.md",
+  "licensesUrl": "https://github.com/[github-username]/unity-custom-package-template/blob/master/LICENSE.md",
+  "dependencies": {
+    "com.unity.modules.ui": "1.0.0"
+  },
+  "keywords": [
+    "keyword1"
+  ],
+  "author": {
+    "name": "[github-username]",
+    "url": "https://github.com/[github-username]"
+  },
+  "samples": [
+    {
+      "displayName": "Samples SampleFolder1",
+      "description": "Contains samples from SampleFolder1",
+      "path": "Samples~/SampleFolder1"
+    }
+  ]
+}
