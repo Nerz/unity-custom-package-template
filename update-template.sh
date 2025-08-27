@@ -18,7 +18,10 @@ filesToUpdate() {
 }
 
 renameFiles() {
-    find . -type f -not -path "./.git*" -name "*\[company-name\].\[package-name\]*" | rename "s/\[company-name\].\[package-name\]/${key_values[0]}.${key_values[1]}/g"
+    find . -type f -not -path "./.git*" -name "*\[company-name\].\[package-name\]*" | while read -r file; do
+        newname=$(echo "$file" | sed "s/\[company-name\].\[package-name\]/${key_values[0]}.${key_values[1]}/g")
+        mv "$file" "$newname"
+    done
 }
 
 updateFiles() {
